@@ -48,6 +48,7 @@ const appendEmailsToSheet = (rawText) => {
 
   regexCell.setValue(regex);
   regexCell.setWrap(false);
+  viewSheet.getRange("H2").setValue("");
 };
 
 const makeRandomCode = (length = 6) => {
